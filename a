@@ -1,0 +1,1 @@
+docker create -i -t -h dev7 --name=dev7 -v /media/ocg_data:/shared -v /src:/ocg -v /proc:/writable-proc -v /sys/fs/cgroup:/sys/fs/cgroup:ro --cap-add ALL --net=none –-privileged dev7_java /sbin/init
